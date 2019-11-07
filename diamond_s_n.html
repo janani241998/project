@@ -1,0 +1,147 @@
+<html>
+<head>
+<title>Elegance Jewellery Shop</title>
+<style type="text/css">
+#dd1{
+width:350px;
+height:350px;
+background-color:black;
+position:absolute;
+top:350px;
+right:470px;
+}
+#dd2{
+position:absolute;
+top:750px;
+right:320px;
+left:440px;
+}
+#aa{ 
+opacity:1;
+}
+#aa:hover{
+        opacity:0.8;
+    }    
+   
+.h{  -webkit-filter: opacity(50%);  filter: opacity(50%);} 
+
+.h{transition: filter .5s ease-in-out; -webkit-filter: opacity(50%);  filter: grayscale(50%);}
+
+.h:hover{  -webkit-filter: opacity(100%);  filter:opacity(100%);}
+
+#i1
+{
+width:1350px;
+height:auto;
+}
+#i2
+{
+
+width:1350px;
+height:300px;
+position:absolute;
+top:0px;
+
+}
+
+
+#d4
+{
+background-color:black;
+width:1350px;
+height:300px;
+position:absolute;
+top:0px;
+}
+
+body
+{
+margin:0;
+padding:0;
+background:#f1f1f1;
+font-family:sans-serif;
+}
+.side{
+position:absolute;
+top:50%
+}
+.side a{
+background:#e74c3c;
+color:white;
+font-size:22px;
+display:block;
+width:130px;
+padding:12px;
+text-decoration:none;
+margin:8px 0;
+color:white;
+border-radius:6px;
+margin-left:-100px;
+transition:0.6s all;
+}
+.side a:hover
+{
+margin-left:0;
+}
+#a1
+{
+position:absolute;
+top:710px;
+right:565px;
+color:#b39944 ;
+text-decoration:none;
+border:1px solid #b39944 ;  
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("img").on("click", function(){
+        var dataId = $(this).attr("id");
+        //alert("The data-id of clicked item is: " + dataId);
+		var imgSource = document.getElementById(dataId).getAttribute('src') ;
+		//alert("The src of clicked item is: " + imgSource);
+		document.getElementById('di').src=imgSource;
+	    localStorage.setItem("imgSource",imgSource)
+    });
+});
+
+</script>
+</head>
+<body>
+<img id="i1" src="bg3.jpg">
+<div id="d1">
+</div>
+
+<div id="d4">
+<img id="i2" src="d_banner.jpg">
+</div>
+
+<div class="side">
+<a href="main_pg.html" style="background:#000000;">Home</a>
+<a href="jewellery.html" style="background:#000000;">Jewellery</a>
+<a href="collections.html" style="background:#000000;">Collection</a>
+<a href="contactus.html" style="background:#000000;">Contact Us</a>
+</div>
+<div id="dd1">
+	     <img id="di" src="dn1.png" alt="Heart" width="400" height="350">
+	</div>
+<a id="a1" href="contactus.html">Make An Enquiry</a>
+
+<div id="dd2">
+<marquee scrollamount="10px">
+<a id="aa" href="#"><img id="1" src="dn1.png"  width="200" height="200"></a>            
+<a id="aa"href="#"><img id="2" src="dn2.png"  width="200" height="200"> </a>
+<a id="aa" href="#"><img id="3" src="dn3.png"  width="200" height="200"> </a>     
+<a id="aa" href="#"><img id="4" src="dn4.png"  width="200" height="200"></a>            
+<a id="aa"href="#"><img id="5" src="dn5.png"  width="200" height="200"> </a>
+<a id="aa" href="#"><img id="6" src="dn6.png"  width="200" height="200"> </a>   
+<a id="aa" href="#"><img id="7" src="dn7.png"  width="200" height="200"> </a>     
+<a id="aa" href="#"><img id="8" src="dn8.png"  width="200" height="200"></a>            
+<a id="aa"href="#"><img id="9" src="dn9.png"  width="200" height="200"> </a>
+<a id="aa" href="#"><img id="10" src="dn10.png"  width="200" height="200"> </a>     
+</marquee>       
+</div>
+
+</body>
+</html>

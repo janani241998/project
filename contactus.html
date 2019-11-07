@@ -1,0 +1,363 @@
+<html>
+<head>
+<title>Elegance Jewellery Shop</title>
+<style type="text/css">
+
+#i1
+{
+background-color:black;
+width:1350px;
+height:1900px;
+}
+
+#d1
+{
+background-color:black;
+width:1350px;
+height:40px;
+position:absolute;
+top:0px;
+
+}
+#bn
+{
+width:1350px;
+height:400px;
+position:absolute;
+top:200px;
+
+}
+#d2
+{
+background-color:black;
+width:1000px;
+height:150px;
+position:absolute;
+top:50px;
+right:150px;
+
+}
+@keyframes slide{
+25%
+  {
+    background:url(sl2.jpg);
+  }
+50%
+  {
+    background:url(sl6.jpg);
+  }
+75%
+  {
+    background:url(sl4.jpg);
+  }
+100%
+  {
+    background:url(diamond_model2.jpg);
+  }  
+}
+#p1
+{
+font-family:Edwardian Script ITC;
+font-size:100px;
+font-weight:bold;
+color:#b39944 ;
+position:absolute;
+top:-110px;
+left:320px;
+}
+#p2
+{
+color:#b39944 ;
+font-family:Brush Script MT;
+font-size:30px;
+position:absolute;
+top:50px;
+left:480px;
+
+}
+#p3
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:30px;
+font-weight:bold;
+position:absolute;
+top:470px;
+left:580px;
+}
+#p4
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:700px;
+left:440px;
+
+}
+#p5
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:840px;
+left:580px;
+
+}
+#p6
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1060px;
+left:500px;
+
+}
+#p7
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1120px;
+left:500px;
+
+}
+#p8
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1180px;
+left:500px;
+
+}
+#p9
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1240px;
+left:500px;
+
+}
+#a1
+{
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:130px;
+right:700px;
+color:#b39944 ;
+text-decoration:none;
+}
+#a2
+{
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:130px;
+right:590px;
+color:#b39944 ;
+text-decoration:none;
+}
+#a3
+{
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:130px;
+right:470px;
+color:#b39944 ;
+text-decoration:none;
+}
+#a4
+{
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:130px;
+right:350px;
+color:#b39944 ;
+text-decoration:none;
+}
+#a5
+{
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:130px;
+right:240px;
+color:#b39944 ;
+text-decoration:none;
+}
+body
+{
+margin:0;
+padding:0;
+background:#f1f1f1;
+font-family:sans-serif;
+}
+.side{
+position:absolute;
+top:50%
+}
+.side a{
+background:#e74c3c;
+color:white;
+font-size:22px;
+display:block;
+width:130px;
+padding:12px;
+text-decoration:none;
+margin:8px 0;
+color:white;
+border-radius:6px;
+margin-left:-100px;
+transition:0.6s all;
+}
+.side a:hover
+{
+margin-left:0;
+}
+#i2{
+position:absolute;
+top:660px;
+right:420px;
+}
+#t1
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1080px;
+left:720px;
+border: 2px solid #b39944 ;
+background-color:black;
+}
+#t2
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1140px;
+left:720px;
+border: 2px solid #b39944 ;
+background-color:black;
+}
+#t3
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:1200px;
+left:720px;
+border: 2px solid #b39944 ;
+background-color:black;
+}
+#t4
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:10px;
+left:220px;
+border: 2px solid #b39944 ;
+background-color:black;
+}
+#b1
+{
+color:#b39944 ;
+font-family:Times New Roman;
+font-size:20px;
+position:absolute;
+top:200px;
+left:155px;
+border: 2px solid #b39944 ;
+background-color:black;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+   
+       
+		var myUrl = localStorage.getItem('imgSource');
+		document.getElementById('i2').src=myUrl;
+		//alert("The data-id of clicked item is: " + myUrl);
+   
+});
+
+</script>
+<script>
+function recieved()
+{
+var name=document.getElementById('t1').value;
+var phno=document.getElementById('t2').value;
+var email=document.getElementById('t3').value;
+var query=document.getElementById('t4').value;
+if (name==' ' || phno==' ' || email==' ' || query==' ')
+ {
+      alert("Enter Fields")    
+ }
+ else
+ {
+      alert("We will get back to you soon, Thanks for contacting us")    
+ }
+
+ 
+}
+</script>
+</head>
+<body>
+<div id="i1">
+</div>
+<div id="d1">
+</div>
+<div id="d2">
+<p id="p1">Elegance</p>
+<p id="p2">For those who want more......</p>
+<a id="a1" href="#">About Us</a>
+<a id="a2" href="jewellery.html">Jewellery</a>
+<a id="a3" href="#">Collection</a>
+<a id="a4" href="#">Contact us</a>
+<a id="a5" href="#">Feedback</a>
+</div>
+<div id="d6">
+<img id="bn" src="contact_us_banner.png">
+<p id="p3">CONTACT US</p>
+</div>
+<div class="side">
+<a href="main_pg.html" style="background:#000000;">Home</a>
+<a href="jewellery.html" style="background:#000000;">Jewellery</a>
+<a href="#" style="background:#000000;">Collection</a>
+<a href="contactus.html" style="background:#000000;">Contact Us</a>
+</div>
+<div>
+<p id="p4">SELECTED PRODUCT:</p>
+<img id="i2" src="" height="150" width="150">
+<form>
+<p id="p5">Corporate office:<br><br>
+Elegance Jewellery Pvt. Ltd.,<br>
+No 48, Whites Road,<br>
+Royapettah,<br>
+Chennai – 600 014<br>
+corporate@elegancejewellery.com<br>
+Tel: +91 (044) 42297700</p>
+<p id="p6">Name:</p><input id="t1" type="text" name="nam" pattern="[A-Za-z]" required>
+<p id="p7">Phone Number:</p><input id="t2" type="tel" name="ph"  pattern="[7-9]{1}[0-9]{9}"  required>
+<p id="p8">Email:</p><input id="t3" type="email" name="em" pattern=".+@gmail.com" size="30" required>
+<p id="p9">Query: <textarea id="t4" name="message" rows="5" cols="20"  required></textarea>
+<input id="b1" type="submit" name="btn" onclick="recieved()">
+</form>
+</div>
+</body>
+</html>
